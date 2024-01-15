@@ -1,0 +1,56 @@
+:root {
+    --small-font-size: 16px;
+    --medium-font-size: 24px;
+    --large-font-size: 36px;
+    --padding: 8px;
+    --main-panel-width: 800px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--small-font-size);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#root {
+	/* display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start; */
+	height: 100%;
+}
+
+.main-panel {
+    /* flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto; */
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	width: var(--main-panel-width);
+	height: 100%;
+    margin: auto;
+}
+
+header {
+    padding: var(--padding);
+    font-size: var(--large-font-size);
+}
+
+.content{
+    height: 100%;
+    padding: var(--padding);
+    overflow-y: scroll;
+}

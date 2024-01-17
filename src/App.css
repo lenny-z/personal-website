@@ -3,7 +3,7 @@
 	--medium-font-size: 24px;
 	--large-font-size: 36px;
 	--padding: 8px;
-	--main-panel-width: 800px;
+	--body-width: 800px;
 }
 
 * {
@@ -21,20 +21,27 @@ body {
 	height: 100%;
 }
 
-#root {
+/* #root {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-start;
 	height: 100%;
-}
+} */
 
 header {
-	flex-grow: 0;
+	/* flex-grow: 0;
 	flex-shrink: 0;
 	padding: var(--padding);
-	font-size: var(--large-font-size);
+	font-size: var(--large-font-size); */
+	position: sticky;
+	top: 0px;
+}
+
+.header-nav{
+	width: var(--body-width);
+	margin: auto;
 }
 
 /* .main-panel { */

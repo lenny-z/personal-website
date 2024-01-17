@@ -1,19 +1,19 @@
+import {Link} from 'react-router-dom';
+import './Skill.js';
 import './App.css';
 
 function App() {
 	return (
-		// <div className="main-panel">
 		<>
 			<header>
-				Lenny Zhou
+				<nav className='header-nav'>
+					<Link to='/'>lennyzhou.com</Link>
+				</nav>
 			</header>
-			{/* <div className="content"> */}
 			<main>
 				Hello, world!
 			</main>
-			{/* </div> */}
 		</>
-		// </div>
 	);
 }
 

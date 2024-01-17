@@ -1,17 +1,18 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Skill.js';
 import './App.css';
+import me from './images/me.jpg';
 
 function App() {
 	return (
 		<>
 			<header>
 				<nav className='header-nav'>
-					<Link to='/'>lennyzhou.com</Link>
+					<Link className='header-link' to='/'>lennyzhou.com</Link>
 				</nav>
 			</header>
 			<main>
-				Hello, world!
+				<img id='me-img' src={me} />
 			</main>
 		</>
 	);

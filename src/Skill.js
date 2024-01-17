@@ -1,7 +1,10 @@
-export default function Skill({name}){
-	return(
+export default function Skill({ name, image }) {
+	return (
 		<div className='skill-div'>
-			{name}
+			<img src={image} />
+			<div className='skill-name-div'>
+				{name}
+			</div>
 		</div>
 	);
 }

@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Open Sans';
+	src: url('./fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
 :root {
 	--body-width: 800px;
 	--me-image-size: 200px;
@@ -7,14 +12,16 @@
 	--small-font-size: 16px;
 	--medium-font-size: 24px;
 	--large-font-size: 36px;
+	--huge-font-size: 54px;
 
 	--primary-color: #00407f;
+	--light-gray: #dfdfdf;
 }
 
 * {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Georgia', 'Times New Roman', Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: var(--small-font-size);
 	text-decoration: none;
 	font-weight: unset;
@@ -60,15 +67,35 @@ main {
 	margin: auto;
 }
 
+#intro-div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
 #me-img {
-	display: block;
+	/* display: block; */
+	/* display: inline; */
 	width: var(--me-image-size);
 	height: var(--me-image-size);
-	margin: auto;
-	margin-top: var(--padding);
-	margin-bottom: var(--padding);
+	margin: var(--padding);
+	flex-grow: 0;
+	flex-shrink: 0;
+	/* float: left; */
+	/* margin: auto; */
+	/* margin-top: var(--padding); */
+	/* margin-bottom: var(--padding); */
 
 	border-radius: 50%;
+}
+
+
+#hi-div{
+	/* display: inline; */
+	/* float: left; */
+	padding: var(--padding);
+	font-size: var(--large-font-size);
 }
 
 h1 {
@@ -79,7 +106,10 @@ h1 {
 .skill-div {
 	display: inline-block;
 	width: var(--skill-div-size);
+	margin: var(--padding);
 	padding: var(--padding);
+
+	background: var(--light-gray);
 }
 
 .skill-div>img {

@@ -14,11 +14,14 @@ function App() {
 				</nav>
 			</header>
 			<main>
-				<img id='me-img' src={me} />
+				<div id='intro-div'>
+					<img id='me-img' src={me} />
+					<div id='hi-div'>Hi, I'm Lenny.</div>
+				</div>
 				<div id='skills-div'>
 					<h1>Skills</h1>
 					<Skill name='C' image={cLogo} />
-					<Skill name='C++' image={cppLogo}/>
+					<Skill name='C++' image={cppLogo} />
 				</div>
 			</main>
 		</>

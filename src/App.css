@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
 	font-family: 'Open Sans';
 	src: url('./fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }
@@ -7,12 +7,13 @@
 	--body-width: 800px;
 	--me-image-size: 200px;
 	--skill-div-size: 100px;
+
 	--padding: 8px;
+	--divider-height: 4px;
 
 	--small-font-size: 16px;
 	--medium-font-size: 24px;
 	--large-font-size: 36px;
-	--huge-font-size: 54px;
 
 	--primary-color: #00407f;
 	--light-gray: #dfdfdf;
@@ -53,7 +54,6 @@ header {
 	padding: var(--padding);
 
 	font-size: var(--medium-font-size);
-	/* text-decoration: none; */
 	color: white;
 }
 
@@ -63,11 +63,10 @@ header {
 
 main {
 	width: var(--body-width);
-	/* padding: var(--padding); */
 	margin: auto;
 }
 
-#intro-div{
+#intro-div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -75,25 +74,17 @@ main {
 }
 
 #me-img {
-	/* display: block; */
-	/* display: inline; */
 	width: var(--me-image-size);
 	height: var(--me-image-size);
 	margin: var(--padding);
 	flex-grow: 0;
 	flex-shrink: 0;
-	/* float: left; */
-	/* margin: auto; */
-	/* margin-top: var(--padding); */
-	/* margin-bottom: var(--padding); */
 
 	border-radius: 50%;
 }
 
 
-#hi-div{
-	/* display: inline; */
-	/* float: left; */
+#hi-div {
 	padding: var(--padding);
 	font-size: var(--large-font-size);
 }
@@ -103,11 +94,29 @@ h1 {
 	font-size: var(--medium-font-size);
 }
 
+h2 {
+	padding: var(--padding);
+	font-size: var(--small-font-size);
+}
+
+/* .skills-div{
+	border-bottom: 4px dashed var(--light-gray);
+} */
+
+hr {
+	margin: var(--padding);
+	height: var(--divider-height);
+	border-width: 0;
+	color: var(--light-gray);
+	background-color: var(--light-gray);
+}
+
 .skill-div {
 	display: inline-block;
 	width: var(--skill-div-size);
 	margin: var(--padding);
 	padding: var(--padding);
+	border-radius: var(--padding);
 
 	background: var(--light-gray);
 }
@@ -117,6 +126,7 @@ h1 {
 	height: var(--skill-div-size);
 }
 
-.skill-name-div{
+.skill-name-div {
 	text-align: center;
+	font-weight: bold;
 }

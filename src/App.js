@@ -32,7 +32,11 @@ function App() {
 			<main>
 				<div id='intro-div'>
 					<img id='me-img' src={me} />
-					<div id='hi-div'>Hi, I'm Lenny.</div>
+					<div id='hi-div'>
+						<h1>Hi, I'm Lenny.</h1>
+						<a href='https://github.com/lenny-z'>https://github.com/lenny-z</a>
+						<a href='https://www.linkedin.com/in/langchunzhou/'>https://www.linkedin.com/in/langchunzhou/</a>
+					</div>
 				</div>
 				<h1>Skills</h1>
 				<h2>Languages</h2>
@@ -64,7 +68,7 @@ function App() {
 				<h2>Environments</h2>
 				<Skill name='Node.js' image={nodeLogo} />
 				<Skill name='Ubuntu Linux' image={ubuntuLogo} />
-				<hr/>
+				<hr />
 				<p>This website is made with React and hosted with Nginx!</p>
 			</main >
 		</>

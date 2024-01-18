@@ -83,10 +83,15 @@ main {
 	border-radius: 50%;
 }
 
-
-#hi-div {
+#hi-div>h1 {
 	padding: var(--padding);
 	font-size: var(--large-font-size);
+}
+
+#hi-div>a {
+	display: block;
+	padding: var(--padding);
+	font-size: var(--small-font-size);
 }
 
 h1 {

@@ -99,10 +99,6 @@ h2 {
 	font-size: var(--small-font-size);
 }
 
-/* .skills-div{
-	border-bottom: 4px dashed var(--light-gray);
-} */
-
 hr {
 	margin: var(--padding);
 	height: var(--divider-height);
@@ -129,4 +125,8 @@ hr {
 .skill-name-div {
 	text-align: center;
 	font-weight: bold;
+}
+
+p {
+	padding: var(--padding);
 }

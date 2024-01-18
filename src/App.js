@@ -11,6 +11,15 @@ import cssLogo from './images/css-logo.png';
 import javascriptLogo from './images/javascript-logo.png';
 import sqlLogo from './images/sql-logo.png';
 import reactLogo from './images/react-logo.png';
+import expressLogo from './images/express-logo.png';
+import javalinLogo from './images/javalin-logo.png';
+import postgresqlLogo from './images/postgresql-logo.png';
+import mysqlLogo from './images/mysql-logo.png';
+import kerasLogo from './images/keras-logo.png';
+import jupyterLogo from './images/jupyter-logo.png';
+import gitLogo from './images/git-logo.png';
+import nodeLogo from './images/node-logo.png';
+import ubuntuLogo from './images/ubuntu-logo.png';
 
 function App() {
 	return (
@@ -27,8 +36,6 @@ function App() {
 				</div>
 				<h1>Skills</h1>
 				<h2>Languages</h2>
-				{/* <div className='skills-div'> */}
-				{/* <div className='skills-subdiv'> */}
 				<Skill name='C' image={cLogo} />
 				<Skill name='C++' image={cppLogo} />
 				<Skill name='Java' image={javaLogo} />
@@ -37,12 +44,28 @@ function App() {
 				<Skill name='CSS' image={cssLogo} />
 				<Skill name='JavaScript' image={javascriptLogo} />
 				<Skill name='SQL' image={sqlLogo} />
-				{/* </div> */}
-				{/* </div> */}
 				<hr />
 				<h2>Libraries & Frameworks</h2>
 				<Skill name='React' image={reactLogo} />
-				{/* </div> */}
+				<Skill name='Express' image={expressLogo} />
+				<Skill name='Javalin' image={javalinLogo} />
+				<hr />
+				<h2>Databases</h2>
+				<Skill name='PostgreSQL' image={postgresqlLogo} />
+				<Skill name='MySQL' image={mysqlLogo} />
+				<hr />
+				<h2>Machine Learning</h2>
+				<Skill name='Keras' image={kerasLogo} />
+				<Skill name='Jupyter Notebook' image={jupyterLogo} />
+				<hr />
+				<h2>Version Control</h2>
+				<Skill name='Git' image={gitLogo} />
+				<hr />
+				<h2>Environments</h2>
+				<Skill name='Node.js' image={nodeLogo} />
+				<Skill name='Ubuntu Linux' image={ubuntuLogo} />
+				<hr/>
+				<p>This website is made with React and hosted with Nginx!</p>
 			</main >
 		</>
 	);
